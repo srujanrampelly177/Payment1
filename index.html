@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+      <meta charset="ISO-8859-1">
+      <title>Payment Wallet</title>
+      <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+      
+</head>
+<body>
+	<div class="container text-center">
+		<div>
+			<h1>Welcome to Payment Wallet</h1>
+		</div>
+		<div>
+			
+		 	<h3><a th:href="@{/register}">New User Register</a></h3>
+		 	<h3><a th:href="@{/login}">Login</a></h3>
+		</div>
+		
+		<br>
+		
+		<form action="/logout">
+			<input type="submit" value="Logout" >
+		</form>
+		
+		
+		<br>
+		 <div>
+     		 <a href="http://localhost:8081/logins">  
+     			 <input type="submit" value="SignOut"/>  
+    		 </a>
+     	 </div>
+      
+	</div>
+</body>
+</html>
